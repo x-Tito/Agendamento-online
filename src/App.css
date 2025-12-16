@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.navbar-container {
+
+  background-color: #000;
+  margin: 0 auto; 
+  padding: 0 20px; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin:auto; 
+  color: #fff; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 25px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 1.1em;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%; 
+}
+
+.menu-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff; 
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    background-color: #000; 
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+.image-container {
+  margin-top: 60px; /* altura da navbar */
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+}
+
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

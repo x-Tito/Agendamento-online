@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css'; 
-import imgBarbearia from './Imagens/imgBarbearia.png';
+import './Navbar.css'; 
+import imgBarbearia from '../Imagens/imgBarbearia.png';
 
 const MenuIcon = () => (
   <svg
@@ -33,7 +32,7 @@ function App() {
       <div className="navbar-container">
         <nav className="navbar">
           <div className="navbar-logo">
-            <a href="/">Meu Projeto</a>
+            <a href="/">Barbearia Strike</a>
           </div>
 
           <button className="menu-toggle" onClick={toggleMenu}>
@@ -45,7 +44,7 @@ function App() {
               <li><a href="#home">Home</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#contato">Contato</a></li>
+              <li><a href="#contato" className='btn-agende'>Agende Aqui</a></li>
             </ul>
           </div>
         </nav>
@@ -55,6 +54,7 @@ function App() {
       <div className="image-container">
         <img src={imgBarbearia} alt="Imagem da barbearia" />
       </div>
+      
     </>
   );
 }

@@ -7,3 +7,40 @@
 .content {
   flex: 1;
 }
+
+.sessao-intro {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 40px;
+  color: white;
+  padding: 0 20px;
+}
+
+.sessao-intro h1 {
+  font-size: 2.5rem;
+  color: #00d2d3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.sessao-intro p {
+  font-size: 1.1rem;
+  color: #000000;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+  .sessao-intro {
+    margin-top: 20%;
+  }
+
+  .sessao-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .sessao-intro p {
+    font-size: 0.9rem;
+  }
+}

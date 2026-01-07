@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Navbar.css'; 
 import imgBarbearia from '../Imagens/imgBarbearia.png';
+import LogoBarbearia from '../Imagens/LogoBarbearia.png';
 
 const MenuIcon = () => (
   <svg
@@ -32,7 +33,9 @@ function App() {
       <div className="navbar-container">
         <nav className="navbar">
           <div className="navbar-logo">
-            <a href="/">Barbearia Strike</a>
+            <a href="/">
+              <img src={LogoBarbearia} alt="Logo Navbar" className="logo-nav"/>
+            </a>
           </div>
 
           <button className="menu-toggle" onClick={toggleMenu}>

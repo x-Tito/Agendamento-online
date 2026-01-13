@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'; 
 import imgBarbearia from '../Imagens/imgBarbearia.png';
 import LogoBarbearia from '../Imagens/LogoBarbearia.png';
@@ -29,7 +30,6 @@ function App() {
   };
 
   return (
-    <>
       <div className="navbar-container">
         <nav className="navbar">
           <div className="navbar-logo">
@@ -44,21 +44,14 @@ function App() {
 
           <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#contato" className='btn-agende'>Agende Aqui</a></li>
+              <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+              <li><Link to="/sobre" onClick={toggleMenu}>Sobre</Link></li>
+              <li><Link to="/servicos" onClick={toggleMenu}>Serviços</Link></li>
+              <li><Link to="/agende" className='btn-agende' onClick={toggleMenu}>Agende Aqui</Link></li>
             </ul>
           </div>
         </nav>
-      </div>
-
-      {/* IMAGEM FORA DO CONTAINER DA NAVBAR */}
-      <div className="image-container">
-        <img src={imgBarbearia} alt="Imagem da barbearia" />
-      </div>
-      
-    </>
+      </div>      
   );
 }
 

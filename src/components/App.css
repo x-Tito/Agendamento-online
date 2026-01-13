@@ -44,3 +44,19 @@
     font-size: 0.9rem;
   }
 }
+
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Começa um pouco abaixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Termina na posição original */
+  }
+}
+
+/* Classe que aplicará a animação */
+.animar-entrada {
+  animation: entradaSuave 0.6s ease-out forwards;
+}

@@ -1,0 +1,58 @@
+.servicos-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.servicos-container h1 {
+  color: #00d2d3; 
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.servico-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.servico-nome {
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.divisor-pontilhado {
+  flex: 1;
+  border-bottom: 2px dotted #444;
+  margin: 0 15px;
+}
+
+.servico-preco {
+  color: #00d2d3;
+  font-weight: bold;
+  min-width: 60px;
+  text-align: right;
+}
+
+.aviso-agendamento {
+  margin-top: 50px;
+  padding: 30px;
+  border-top: 1px solid #333;
+  color: #fff;
+}
+
+

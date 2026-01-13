@@ -1,23 +1,30 @@
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import './App.css';
+import Home from '../pages/Home';
 import Footer from './Footer';
-import Carrossel from './Carrossel';
+import './App.css';
+import Sobre from '../pages/Sobre';
+import Servicos from '../pages/Servicos';
 
 function App(){
   return(
+    <Router>
   <div className='app'>
     <Navbar/>
+
     <main className='content'>
-      <section className="sessao-intro">
-        <h1>Nossos Melhores Cortes</h1>
-        <p>Transforme seu visual com os profissionais da Barbearia Strike!</p>
-      </section>
-    <Carrossel/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/sobre' element={<Sobre/>}/>
+        <Route path='/servicos' element={<Servicos/>}/>
+        <Route path='/agende' element={<section><h1>Agendamento Online</h1></section>}/>
+
+      </Routes>
     </main>
     <Footer/>
   </div>
-  )
+  </Router>
+  );
 }
 
 export default App;

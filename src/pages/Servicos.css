@@ -8,11 +8,13 @@
   color: #00d2d3; 
   font-size: 2.5rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .subtitulo {
   color: #ccc;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .servicos-grid {
@@ -53,6 +55,21 @@
   padding: 30px;
   border-top: 1px solid #333;
   color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 380px) {
+    .servico-nome {
+        font-size: 0.85rem; 
+    }
+    
+    .servico-preco {
+        font-size: 0.95rem;
+    }
+
+    .servico-item {
+        gap: 5px; 
+    }
 }
 
 

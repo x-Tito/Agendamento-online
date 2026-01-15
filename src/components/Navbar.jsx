@@ -47,7 +47,7 @@ function App() {
               <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
               <li><Link to="/sobre" onClick={toggleMenu}>Sobre</Link></li>
               <li><Link to="/servicos" onClick={toggleMenu}>Serviços</Link></li>
-              <li><Link to="/agende" className='btn-agende' onClick={toggleMenu}>Agende Aqui</Link></li>
+              <li><Link to="/agende" className='btn-agende' onClick={toggleMenu}>Agendamento</Link></li>
             </ul>
           </div>
         </nav>

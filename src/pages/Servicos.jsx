@@ -1,5 +1,6 @@
 import React from 'react';
 import './Servicos.css';
+import imagemPagamentos from'../Imagens/Servicos/FormasdePag.png';
 
 const listaServicos = [
   { nome: "Corte", preco: "R$ 25" },
@@ -29,6 +30,13 @@ function Servicos() {
           ))}
         </div>
 
+        <div className="pagamentos-container">
+          <img 
+            src={imagemPagamentos} 
+            alt="Formas de Pagamento" 
+            className="imagem-pagamentos" 
+          />
+          </div>
         <div className="aviso-agendamento">
           <p>Gostou? Garanta o seu horário agora mesmo!</p>
         </div>

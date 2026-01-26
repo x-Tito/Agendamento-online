@@ -152,7 +152,7 @@ color: var(--turquesa);
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 50px; 
+    top: 55px; 
     left: 0;
     background-color: #000; 
     text-align: center;
@@ -201,8 +201,7 @@ color: var(--turquesa);
 }
 
 .logo-nav {
-  height: 40px;
+  height: 50px;
   width: auto;
-  margin-left: 10px;
   display: block;
 }

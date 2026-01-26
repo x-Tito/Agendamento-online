@@ -17,8 +17,10 @@ function Sobre() {
                             </div>
                             <div className="flip-card-back">
                                 <h3>Tubarão do Corte</h3>
-                                <p>Mestre na navalha e estilo moderno. Focado em trazer inovação e técnica 
-                                para a barbearia.</p>
+                                <p>Desde 2017, Tubarão do Corte é especialista em cortes modernos, dominando técnicas de platinado, 
+                                    pigmentação e artes exclusivas em desenhos e listras. Com domínio total em todos os tipos de fios,
+                                    ele oferece o cuidado completo de barba, bigode e sobrancelha com precisão técnica. Estilo e autenticidade
+                                    para transformar o seu visual com quem entende do assunto.</p>
                             </div>
                         </div>
                     </div>
@@ -29,8 +31,10 @@ function Sobre() {
                             </div>
                             <div className="flip-card-back">
                                 <h3>Gabriel</h3>
-                                <p>Mestre na navalha e estilo moderno. Focado em trazer inovação e técnica 
-                                para a barbearia.</p>
+                                <p>Atuando desde 2016, Gabriel é um profissional que preza pela técnica artesanal, sendo um verdadeiro
+                                     especialista em cortes feitos inteiramente na tesoura. Com foco exclusivo na precisão e no acabamento 
+                                     impecável, ele não utiliza processos químicos, priorizando o caimento natural e a saúde dos fios. É a escolha 
+                                     ideal para quem busca um estilo clássico, sofisticado e personalizado em cada detalhe.</p>
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,7 @@ import Footer from './Footer';
 import './App.css';
 import Sobre from '../pages/Sobre';
 import Servicos from '../pages/Servicos';
+import Agendamento from '../pages/Agendamento';
 
 function App(){
   return(
@@ -17,7 +18,7 @@ function App(){
         <Route path='/' element={<Home/>}/>
         <Route path='/sobre' element={<Sobre/>}/>
         <Route path='/servicos' element={<Servicos/>}/>
-        <Route path='/agende' element={<section><h1>Agendamento Online</h1></section>}/>
+        <Route path='/agende' element={<Agendamento/>}/>
 
       </Routes>
     </main>

@@ -71,5 +71,18 @@
         gap: 5px; 
     }
 }
+.pagamentos-container {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-pagamentos {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 
